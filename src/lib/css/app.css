@@ -72,7 +72,8 @@ a:focus {
 }
 
 button,
-input {
+input,
+select {
 	color: var(--font-color);
 	border: none;
 	font-family: inherit;
@@ -92,7 +93,8 @@ button:focus {
 	outline-offset: 0.2rem;
 }
 
-input {
+input,
+select {
 	padding: 0.4rem;
 	width: 100%;
 	border: 0.1rem solid #555;
