@@ -8,7 +8,12 @@
 		href: string;
 	};
 
-	const links: link[] = [];
+	const links: link[] = [
+		{
+			name: 'Forms',
+			href: '/forms'
+		}
+	];
 </script>
 
 <nav>
