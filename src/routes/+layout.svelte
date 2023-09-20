@@ -7,3 +7,9 @@
 <main>
 	<slot />
 </main>
+
+<style>
+	main {
+		margin-left: 20px;
+	}
+</style>
