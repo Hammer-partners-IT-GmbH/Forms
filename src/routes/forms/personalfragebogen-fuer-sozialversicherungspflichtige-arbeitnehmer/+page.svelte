@@ -1,6 +1,10 @@
+<script>
+	import { enhance } from '$app/forms';
+</script>
+
 <h1>Personalfragebogen für sozialversicherungspflichtige Arbeitnhemer</h1>
 
-<form action="POST">
+<form action="POST" autocomplete="on" use:enhance>
 	<div class="number">
 		<label for="mandaten-nummer">Mandatennummer</label>
 		<input type="number" name="mandaten-nummer" id="mandaten-nummer" />
