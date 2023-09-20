@@ -4,7 +4,7 @@
 
 <h1>Personalfragebogen für sozialversicherungspflichtige Arbeitnhemer</h1>
 
-<form action="POST" autocomplete="on" use:enhance>
+<form method="POST" autocomplete="on" use:enhance>
 	<div class="number">
 		<label for="mandaten-nummer">Mandatennummer</label>
 		<input type="number" name="mandaten-nummer" id="mandaten-nummer" />
