@@ -1,0 +1,1 @@
+<h1>Vielen Dank, das Sie das Formular abgeschieckt haben.</h1>
