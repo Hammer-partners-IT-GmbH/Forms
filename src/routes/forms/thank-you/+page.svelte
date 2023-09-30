@@ -1,1 +1,1 @@
-<h1>Vielen Dank, das Sie das Formular abgeschieckt haben.</h1>
+<h1>Vielen Dank, das Sie das Formular abgeschickt haben.</h1>
