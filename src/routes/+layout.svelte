@@ -8,8 +8,9 @@
 	<slot />
 </main>
 
-<style>
+<style lang="scss">
 	main {
-		margin-left: 20px;
+		max-width: 40rem;
+		margin: 0 auto;
 	}
 </style>
