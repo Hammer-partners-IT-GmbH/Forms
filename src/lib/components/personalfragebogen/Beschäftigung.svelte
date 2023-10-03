@@ -33,3 +33,40 @@
 		<option value="nebenbeschäftigung">Nebenbeschäftigung</option>
 	</select>
 </div>
+
+<h3>Wöchentliche Arbeitszeit</h3>
+
+<div class="number">
+	<label for="stundenProWoche">Std./Woche</label>
+	<input type="number" id="stundenProWoche" name="stundenProWoche" required />
+	<div class="choice">
+		<select name="VollzeitoderTeilzeit" id="VollzeitoderTeilzeit" required>
+			<option value="vollzeit">Vollzeit</option>
+			<option value="teilzeit">Teilzeit</option>
+		</select>
+	</div>
+</div>
+
+<div class="number">
+	<p>Ggf. Verteilung der wöchentlichen Arbeitszeit</p>
+	<label for="montag">Montag:</label>
+	<input type="number" id="montag" name="montag" min="0" max="24" step="1" /><br />
+
+	<label for="dienstag">Dienstag:</label>
+	<input type="number" id="dienstag" name="dienstag" min="0" max="24" step="1" /><br />
+
+	<label for="mittwoch">Mittwoch:</label>
+	<input type="number" id="mittwoch" name="mittwoch" min="0" max="24" step="1" /><br />
+
+	<label for="donnerstag">Donnerstag:</label>
+	<input type="number" id="donnerstag" name="donnerstag" min="0" max="24" step="1" /><br />
+
+	<label for="freitag">Freitag:</label>
+	<input type="number" id="freitag" name="freitag" min="0" max="24" step="1" /><br />
+
+	<label for="samstag">Samstag:</label>
+	<input type="number" id="samstag" name="samstag" min="0" max="24" step="1" /><br />
+
+	<label for="sonntag">Sonntag:</label>
+	<input type="number" id="sonntag" name="sonntag" min="0" max="24" step="1" /><br />
+</div>
