@@ -11,12 +11,14 @@
 </div>
 
 <div class="text">
-	<label for="berufsbezeichnung">Berufsbezeichnung (Ausgeübte Tätigkeit)</label>
+	<label for="berufsbezeichnung" class="required-label"
+		>Berufsbezeichnung (Ausgeübte Tätigkeit)</label
+	>
 	<input type="text" name="berufsbezeichnung" id="berufsbezeichnung" required />
 </div>
 
 <div class="choice">
-	<label for="weitere_beschäftigung"
+	<label for="weitere_beschäftigung" class="required-label"
 		>Üben Sie, neben dieser neuen, weitere Beschäftigungen aus?</label
 	>
 	<select name="weitere_beschäftigung" id="weitere_beschäftigung" required>
@@ -26,7 +28,7 @@
 </div>
 
 <div class="choice">
-	<label for="als">Wenn Ja, als </label>
+	<label for="als" class="required-label">Wenn Ja, als </label>
 	<select name="als" id="als" required>
 		<option value="Nein">Ich habe oben nein gewählt</option>
 		<option value="hauptbeschäftigung">Hauptbeschäftigung</option>
@@ -37,7 +39,7 @@
 <h3>Wöchentliche Arbeitszeit</h3>
 
 <div class="number">
-	<label for="stundenProWoche">Std./Woche</label>
+	<label for="stundenProWoche" class="required-label">Std./Woche</label>
 	<input type="number" id="stundenProWoche" name="stundenProWoche" required />
 	<div class="choice">
 		<select name="VollzeitoderTeilzeit" id="VollzeitoderTeilzeit" required>
