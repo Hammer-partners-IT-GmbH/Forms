@@ -3,6 +3,7 @@
 	import Beschftigung from '$lib/components/personalfragebogen/Beschäftigung.svelte';
 	import Entlohnung from '$lib/components/personalfragebogen/Entlohnung.svelte';
 	import PersonalInformation from '$lib/components/personalfragebogen/Persöhnliche_Information.svelte';
+	import Steuer from '$lib/components/personalfragebogen/Steuer.svelte';
 </script>
 
 <h1>Personalfragebogen für sozialversicherungspflichtige Arbeitnhemer</h1>
@@ -13,6 +14,7 @@
 	<PersonalInformation />
 	<Beschftigung />
 	<Entlohnung />
+	<Steuer />
 
 	<button>Einreichen</button>
 </form>
