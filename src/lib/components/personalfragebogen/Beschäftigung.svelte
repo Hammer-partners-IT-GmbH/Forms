@@ -12,7 +12,7 @@
 
 <div class="text">
 	<label for="berufsbezeichnung">Berufsbezeichnung (Ausgeübte Tätigkeit)</label>
-	<input type="text" name="berufsbezeichnung" id="berufsbezeichnung" />
+	<input type="text" name="berufsbezeichnung" id="berufsbezeichnung" required />
 </div>
 
 <div class="choice">
@@ -27,7 +27,8 @@
 
 <div class="choice">
 	<label for="als">Wenn Ja, als </label>
-	<select name="als" id="als">
+	<select name="als" id="als" required>
+		<option value="Nein">Ich habe oben nein gewählt</option>
 		<option value="hauptbeschäftigung">Hauptbeschäftigung</option>
 		<option value="nebenbeschäftigung">Nebenbeschäftigung</option>
 	</select>
