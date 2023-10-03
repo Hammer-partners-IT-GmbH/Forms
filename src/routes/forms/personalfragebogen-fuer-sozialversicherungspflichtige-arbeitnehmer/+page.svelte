@@ -1,7 +1,7 @@
 <script>
 	import { enhance } from '$app/forms';
-	import Occupation from '$lib/components/personalfragebogen/occupation.svelte';
-	import PersonalInformation from '$lib/components/personalfragebogen/personal_information.svelte';
+	import Beschftigung from '$lib/components/personalfragebogen/Beschäftigung.svelte';
+	import PersonalInformation from '$lib/components/personalfragebogen/Persöhnliche_Information.svelte';
 </script>
 
 <h1>Personalfragebogen für sozialversicherungspflichtige Arbeitnhemer</h1>
@@ -10,7 +10,7 @@
 
 <form method="POST" autocomplete="on" use:enhance>
 	<PersonalInformation />
-	<Occupation />
+	<Beschftigung />
 
 	<button>Einreichen</button>
 </form>
