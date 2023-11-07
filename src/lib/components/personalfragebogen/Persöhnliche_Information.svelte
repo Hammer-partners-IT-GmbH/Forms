@@ -1,6 +1,10 @@
+<script>
+	let mandantenNummer = '';
+</script>
+
 <div class="number">
 	<label for="mandanten-nummer" class="required-label">Mandantennummer</label>
-	<input type="number" name="mandanten-nummer" id="mandanten-nummer" required />
+	<input type="text" bind:value={mandantenNummer} maxlength="5" />
 </div>
 <div class="number">
 	<label for="personal-number" class="required-label">Personalnummer</label>
