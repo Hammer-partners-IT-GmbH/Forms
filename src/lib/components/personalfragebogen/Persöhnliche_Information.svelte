@@ -1,6 +1,6 @@
 <div class="number">
-	<label for="mandaten-nummer" class="required-label">Mandatennummer</label>
-	<input type="number" name="mandaten-nummer" id="mandaten-nummer" required />
+	<label for="mandanten-nummer" class="required-label">Mandantennummer</label>
+	<input type="number" name="mandanten-nummer" id="mandanten-nummer" required />
 </div>
 <div class="number">
 	<label for="personal-number" class="required-label">Personalnummer</label>
