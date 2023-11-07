@@ -7,3 +7,10 @@
 <main>
 	<slot />
 </main>
+
+<style lang="scss">
+	main {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+</style>
