@@ -1,16 +1,20 @@
 <script lang="ts">
-	import Nav from '$lib/components/Nav.svelte';
-	import '$lib/css/app.css';
+	import Nav from "$lib/components/Nav.svelte";
+	import "$lib/css/app.css";
+	import type { LayoutData } from "./$types";
+	export let data: LayoutData;
 </script>
 
-<Nav />
+<Nav logged_in={!!data.name && !!data.email} />
+
 <main>
 	<slot />
 </main>
 
-<style lang="scss">
+<style>
 	main {
-		max-width: 40rem;
-		margin: 0 auto;
+		max-width: 30rem;
+		margin-inline: auto;
+		padding-inline: 1rem;
 	}
 </style>
