@@ -1,7 +1,7 @@
-import bcrypt from "bcrypt";
+import bcrypt from 'bcrypt';
 
-import { User_Model } from "./models";
-import { email_regexp } from "./utils";
+import { User_Model } from './models';
+import { email_regexp } from './utils';
 
 export async function register_user(
 	email: string,
@@ -30,14 +30,16 @@ export async function register_user(
 	const hashed_password = await bcrypt.hash(password, salt_rounds);
 
 	const user = new User_Model({
-		email,
-		password: hashed_password,
-		name
+		user: {
+			email,
+			password: hashed_password,
+			name
+		}
 	});
 
 	try {
 		await user.save();
-		return { error: "" };
+		return { error: '' };
 	} catch (err) {
 		return { error: err?.toString() as string };
 	}
@@ -45,42 +47,42 @@ export async function register_user(
 
 export async function verify_email(email: string): Promise<string> {
 	if (!email) {
-		return "Email is required.";
+		return 'Email is required.';
 	}
 
 	if (!email.match(email_regexp)) {
-		return "Please enter a valid email.";
+		return 'Please enter a valid email.';
 	}
 
 	const previous_user = await User_Model.findOne({ email });
 
 	if (previous_user) {
-		return "There is already an account with this email.";
+		return 'There is already an account with this email.';
 	}
 
-	return "";
+	return '';
 }
 
 function verify_password(password: string): string {
 	if (!password) {
-		return "Password is required.";
+		return 'Password is required.';
 	}
 
 	if (password.length < 8) {
-		return "Password must be at least 8 characters.";
+		return 'Password must be at least 8 characters.';
 	}
 
-	return "";
+	return '';
 }
 
 export function verify_name(name: string): string {
 	if (!name) {
-		return "Name is required.";
+		return 'Name is required.';
 	}
 
 	if (name.length <= 1) {
-		return "Name has to be at least 2 characters.";
+		return 'Name has to be at least 2 characters.';
 	}
 
-	return "";
+	return '';
 }
