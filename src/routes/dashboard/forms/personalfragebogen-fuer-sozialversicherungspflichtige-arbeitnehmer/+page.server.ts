@@ -93,16 +93,12 @@ export const actions: Actions = {
 
 			await user.save();
 
-			return {
-				status: 200,
-				body: JSON.stringify({ message: 'Form saved successfully' })
-			};
+			const message = 'Form saved successfully';
+
+			return { message };
 		} catch (error) {
 			console.error(error);
-			return {
-				status: 500,
-				body: JSON.stringify({ error: 'Error saving Form' })
-			};
+			return { error };
 		}
 	}
 };

@@ -1,9 +1,12 @@
-<script>
+<script lang="ts">
 	import { enhance } from '$app/forms';
 	import Beschftigung from '$lib/components/personalfragebogen/Beschäftigung.svelte';
 	import Entlohnung from '$lib/components/personalfragebogen/Entlohnung.svelte';
 	import PersonalInformation from '$lib/components/personalfragebogen/Persöhnliche_Information.svelte';
 	import Steuer from '$lib/components/personalfragebogen/Steuer.svelte';
+	import type { ActionData } from './$types';
+
+	export let form: ActionData;
 </script>
 
 <h1>Personalfragebogen für sozialversicherungspflichtige Arbeitnhemer</h1>
@@ -18,6 +21,16 @@
 
 	<button>Einreichen</button>
 </form>
+
+{#if form?.body}
+	<p class="success">{form.message}</p>
+{/if}
+
+{#if form?.error}
+	<p class="error">
+		{form.error}
+	</p>
+{/if}
 
 <style lang="scss">
 	:global(label) {
