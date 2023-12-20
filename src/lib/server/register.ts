@@ -54,7 +54,7 @@ export async function verify_email(email: string): Promise<string> {
 		return 'Please enter a valid email.';
 	}
 
-	const previous_user = await User_Model.findOne({ email });
+	const previous_user = await User_Model.findOne({ 'user.email': email });
 
 	if (previous_user) {
 		return 'There is already an account with this email.';

@@ -29,7 +29,7 @@ async function get_user(email: string, password: string): Promise<{ error: strin
 		return { error: 'Please enter a valid email.' };
 	}
 
-	const user = await User_Model.findOne({ email });
+	const user = await User_Model.findOne({ 'user.email': email });
 
 	if (!user) {
 		return { error: 'Email could not be found.' };
