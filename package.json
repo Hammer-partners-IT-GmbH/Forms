@@ -12,23 +12,23 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.1.1",
-		"@sveltejs/kit": "^1.30.3",
+		"@sveltejs/adapter-auto": "^3.1.1",
+		"@sveltejs/kit": "^2.5.0",
 		"@types/bcrypt": "^5.0.2",
 		"@types/jsonwebtoken": "^9.0.5",
-		"prettier": "^3.0.3",
+		"prettier": "^3.2.4",
 		"prettier-plugin-svelte": "^3.1.2",
-		"svelte": "^4.2.8",
-		"svelte-check": "^3.6.2",
-		"tslib": "^2.4.1",
+		"svelte": "^4.2.9",
+		"svelte-check": "^3.6.3",
+		"tslib": "^2.6.2",
 		"typescript": "^5.3.3",
-		"vite": "^4.5.1"
+		"vite": "^5.0.12"
 	},
 	"type": "module",
 	"dependencies": {
 		"bcrypt": "^5.1.1",
 		"jsonwebtoken": "^9.0.2",
-		"mongoose": "^8.0.3",
-		"sass": "^1.69.5"
+		"mongoose": "^8.1.1",
+		"sass": "^1.70.0"
 	}
 }
