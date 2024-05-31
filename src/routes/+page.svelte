@@ -1,1 +1,0 @@
-<h1>Hammer & Partner Forms</h1>

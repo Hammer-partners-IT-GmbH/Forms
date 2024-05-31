@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: forms
-    env: node
-    buildCommand: npm install && npm run build
-    startCommand: node build/index.js
