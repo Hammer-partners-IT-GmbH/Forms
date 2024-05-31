@@ -2,7 +2,7 @@
 	let forms = [
 		{
 			title: 'Personalfragebogen für sozialversicherungspflichtige Arbeitnehmer',
-			link: '/forms/personalfragebogen-fuer-sozialversicherungspflichtige-arbeitnehmer'
+			link: '/dashboard/forms/personalfragebogen-fuer-sozialversicherungspflichtige-arbeitnehmer'
 		}
 	];
 </script>

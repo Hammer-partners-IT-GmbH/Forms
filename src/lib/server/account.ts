@@ -1,7 +1,7 @@
-import type { Cookies } from "@sveltejs/kit";
-import { authenticate } from "./authenticate";
-import { User_Model } from "./models";
-import { verify_email, verify_name } from "./register";
+import type { Cookies } from '@sveltejs/kit';
+import { authenticate } from './authenticate';
+import { User_Model } from './models';
+import { verify_email, verify_name } from './register';
 
 export async function change_name(
 	cookies: Cookies,
@@ -10,7 +10,7 @@ export async function change_name(
 	const auth = authenticate(cookies);
 
 	if (!auth) {
-		return { error: "You are not authorized." };
+		return { error: 'You are not authorized.' };
 	}
 
 	const { id } = auth;
@@ -24,14 +24,14 @@ export async function change_name(
 	const user = await User_Model.findOne({ _id: id });
 
 	if (!user) {
-		return { error: "User could not be found" };
+		return { error: 'User could not be found' };
 	}
 
-	if (user.name === name) {
-		return { error: "You already have this name." };
+	if (user.user.name === name) {
+		return { error: 'You already have this name.' };
 	}
 
-	user.name = name;
+	user.user.name = name;
 
 	try {
 		await user.save();
@@ -48,7 +48,7 @@ export async function change_email(
 	const auth = authenticate(cookies);
 
 	if (!auth) {
-		return { error: "You are not authorized." };
+		return { error: 'You are not authorized.' };
 	}
 
 	const { id } = auth;
@@ -62,10 +62,10 @@ export async function change_email(
 	const user = await User_Model.findOne({ _id: id });
 
 	if (!user) {
-		return { error: "User could not find found." };
+		return { error: 'User could not find found.' };
 	}
 
-	user.email = email;
+	user.user.email = email;
 
 	try {
 		await user.save();
